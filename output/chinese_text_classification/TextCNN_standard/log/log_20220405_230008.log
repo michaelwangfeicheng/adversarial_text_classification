@@ -1,0 +1,624 @@
+2022-04-05 23:00:08 torch_task.py torch_task _init_summary_writer [line:570] [INFO] 初始化 Summary Writer，Writing summary into output/chinese_text_classification/tensorboard/20220405_230008
+2022-04-05 23:00:08 environment.py environment _setup_torch_environment [line:58] [INFO] device cuda:0 n_gpu 2
+2022-04-05 23:00:15 environment.py environment _reset_random_seed [line:21] [INFO] ====================Reset Random Seed to 1234====================
+2022-04-05 23:00:15 dataset_torch.py dataset_torch _load_data [line:127] [INFO] content=中华女子学院：本科层次仅1专业招男生,label=3,seq_len=18,token_ids=[14, 125, 55, 45, 35, 307, 4, 81, 161, 941, 258, 494, 2, 175, 48, 145, 97, 17, 4761, 4761, 4761, 4761, 4761, 4761, 4761, 4761, 4761, 4761, 4761, 4761, 4761, 4761]
+2022-04-05 23:00:15 dataset_torch.py dataset_torch _load_data [line:127] [INFO] content=两天价网站背后重重迷雾：做个网站究竟要多少钱,label=4,seq_len=22,token_ids=[135, 80, 33, 54, 505, 1032, 70, 95, 95, 681, 2288, 4, 486, 179, 54, 505, 626, 1156, 180, 115, 421, 561, 4761, 4761, 4761, 4761, 4761, 4761, 4761, 4761, 4761, 4761]
+2022-04-05 23:00:15 dataset_torch.py dataset_torch _load_data [line:127] [INFO] content=东5环海棠公社230-290平2居准现房98折优惠,label=1,seq_len=25,token_ids=[152, 13, 469, 87, 2416, 36, 725, 3, 10, 1, 61, 3, 16, 1, 57, 3, 99, 477, 67, 58, 16, 24, 280, 453, 558, 4761, 4761, 4761, 4761, 4761, 4761, 4761]
+2022-04-05 23:00:15 dataset_torch.py dataset_torch _load_data [line:127] [INFO] content=卡佩罗：告诉你德国脚生猛的原因 不希望英德战踢点球,label=7,seq_len=25,token_ids=[278, 1231, 344, 4, 304, 762, 589, 252, 6, 1206, 17, 1359, 52, 498, 282, 0, 25, 672, 358, 123, 252, 84, 1560, 101, 120, 4761, 4761, 4761, 4761, 4761, 4761, 4761]
+2022-04-05 23:00:15 dataset_torch.py dataset_torch _load_data [line:127] [INFO] content=82岁老太为学生做饭扫地44年获授港大荣誉院士,label=5,seq_len=23,token_ids=[24, 3, 348, 187, 518, 73, 35, 17, 486, 1464, 1499, 63, 22, 22, 12, 199, 1353, 242, 5, 1157, 1568, 307, 324, 4761, 4761, 4761, 4761, 4761, 4761, 4761, 4761, 4761]
+2022-04-05 23:00:18 dataset_torch.py dataset_torch _load_data [line:135] [INFO] 加载数据共180000 from corpus/THUCNews/data/train.txt
+2022-04-05 23:00:18 dataset_torch.py dataset_torch _load_data [line:127] [INFO] content=体验2D巅峰 倚天屠龙记十大创新概览,label=8,seq_len=18,token_ids=[173, 714, 3, 186, 1844, 889, 0, 2641, 80, 2061, 416, 478, 382, 5, 308, 15, 1264, 1344, 4761, 4761, 4761, 4761, 4761, 4761, 4761, 4761, 4761, 4761, 4761, 4761, 4761, 4761]
+2022-04-05 23:00:18 dataset_torch.py dataset_torch _load_data [line:127] [INFO] content=60年铁树开花形状似玉米芯(组图),label=5,seq_len=17,token_ids=[28, 1, 12, 567, 1371, 31, 365, 899, 846, 1300, 1095, 256, 1311, 8, 72, 7, 9, 4761, 4761, 4761, 4761, 4761, 4761, 4761, 4761, 4761, 4761, 4761, 4761, 4761, 4761, 4761]
+2022-04-05 23:00:18 dataset_torch.py dataset_torch _load_data [line:127] [INFO] content=同步A股首秀：港股缩量回调,label=2,seq_len=13,token_ids=[285, 688, 119, 51, 83, 570, 4, 242, 51, 1082, 371, 146, 174, 4761, 4761, 4761, 4761, 4761, 4761, 4761, 4761, 4761, 4761, 4761, 4761, 4761, 4761, 4761, 4761, 4761, 4761, 4761]
+2022-04-05 23:00:18 dataset_torch.py dataset_torch _load_data [line:127] [INFO] content=中青宝sg现场抓拍 兔子舞热辣表演,label=8,seq_len=17,token_ids=[14, 527, 435, 576, 1058, 67, 64, 1093, 443, 0, 2081, 45, 953, 193, 1715, 430, 301, 4761, 4761, 4761, 4761, 4761, 4761, 4761, 4761, 4761, 4761, 4761, 4761, 4761, 4761, 4761]
+2022-04-05 23:00:18 dataset_torch.py dataset_torch _load_data [line:127] [INFO] content=锌价难续去年辉煌,label=0,seq_len=8,token_ids=[1902, 33, 290, 221, 630, 12, 1450, 2067, 4761, 4761, 4761, 4761, 4761, 4761, 4761, 4761, 4761, 4761, 4761, 4761, 4761, 4761, 4761, 4761, 4761, 4761, 4761, 4761, 4761, 4761, 4761, 4761]
+2022-04-05 23:00:18 dataset_torch.py dataset_torch _load_data [line:135] [INFO] 加载数据共10000 from corpus/THUCNews/data/dev.txt
+2022-04-05 23:00:18 dataset_torch.py dataset_torch _load_data [line:127] [INFO] content=词汇阅读是关键 08年考研暑期英语复习全指南,label=3,seq_len=22,token_ids=[1393, 686, 1350, 656, 110, 232, 1138, 0, 1, 24, 12, 26, 216, 1533, 56, 123, 434, 270, 742, 65, 112, 236, 4761, 4761, 4761, 4761, 4761, 4761, 4761, 4761, 4761, 4761]
+2022-04-05 23:00:18 dataset_torch.py dataset_torch _load_data [line:127] [INFO] content=中国人民公安大学2012年硕士研究生目录及书目,label=3,seq_len=23,token_ids=[14, 6, 11, 156, 36, 211, 5, 35, 3, 1, 2, 3, 12, 830, 324, 216, 626, 17, 334, 291, 461, 659, 334, 4761, 4761, 4761, 4761, 4761, 4761, 4761, 4761, 4761]
+2022-04-05 23:00:18 dataset_torch.py dataset_torch _load_data [line:127] [INFO] content=日本地震：金吉列关注在日学子系列报道,label=3,seq_len=18,token_ids=[29, 81, 63, 439, 4, 18, 963, 769, 232, 520, 53, 29, 35, 45, 399, 769, 100, 364, 4761, 4761, 4761, 4761, 4761, 4761, 4761, 4761, 4761, 4761, 4761, 4761, 4761, 4761]
+2022-04-05 23:00:18 dataset_torch.py dataset_torch _load_data [line:127] [INFO] content=名师辅导：2012考研英语虚拟语气三种用法,label=3,seq_len=21,token_ids=[59, 298, 1856, 433, 4, 3, 1, 2, 3, 26, 216, 123, 434, 1402, 671, 434, 515, 60, 763, 158, 151, 4761, 4761, 4761, 4761, 4761, 4761, 4761, 4761, 4761, 4761, 4761]
+2022-04-05 23:00:18 dataset_torch.py dataset_torch _load_data [line:127] [INFO] content=自考经验谈：自考生毕业论文选题技巧,label=3,seq_len=17,token_ids=[102, 26, 162, 714, 499, 4, 102, 26, 17, 1242, 48, 647, 133, 239, 303, 528, 1226, 4761, 4761, 4761, 4761, 4761, 4761, 4761, 4761, 4761, 4761, 4761, 4761, 4761, 4761, 4761]
+2022-04-05 23:00:18 dataset_torch.py dataset_torch _load_data [line:135] [INFO] 加载数据共10000 from corpus/THUCNews/data/test.txt
+2022-04-05 23:00:18 torch_task.py torch_task _prepare_data_loader [line:379] [INFO] 生成 train dataloader
+2022-04-05 23:00:18 torch_task.py torch_task _prepare_data_loader [line:379] [INFO] 生成 dev dataloader
+2022-04-05 23:00:18 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=0,step=0
+2022-04-05 23:00:18 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=0,loss=2.321242094039917,train_accuracy =0.15625,dev_loss=2.4629921913146973,dev_accuracy=0.0625
+2022-04-05 23:00:22 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=0,step=100
+2022-04-05 23:00:23 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=100,loss=0.8039559721946716,train_accuracy =0.703125,dev_loss=0.7606630325317383,dev_accuracy=0.75
+2022-04-05 23:00:26 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=0,step=200
+2022-04-05 23:00:27 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=200,loss=0.7113338708877563,train_accuracy =0.765625,dev_loss=0.5752704739570618,dev_accuracy=0.8125
+2022-04-05 23:00:31 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=0,step=300
+2022-04-05 23:00:31 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=300,loss=0.46368253231048584,train_accuracy =0.8671875,dev_loss=0.5109472274780273,dev_accuracy=0.8125
+2022-04-05 23:00:35 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=0,step=400
+2022-04-05 23:00:35 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=400,loss=0.6905603408813477,train_accuracy =0.8203125,dev_loss=0.48444029688835144,dev_accuracy=0.8125
+2022-04-05 23:00:39 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=0,step=500
+2022-04-05 23:00:39 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=500,loss=0.3635687828063965,train_accuracy =0.8984375,dev_loss=0.44863998889923096,dev_accuracy=0.8125
+2022-04-05 23:00:43 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=0,step=600
+2022-04-05 23:00:44 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=600,loss=0.5175939798355103,train_accuracy =0.828125,dev_loss=0.43909546732902527,dev_accuracy=0.8125
+2022-04-05 23:00:47 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=0,step=700
+2022-04-05 23:00:48 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=700,loss=0.5084744095802307,train_accuracy =0.8203125,dev_loss=0.4133932888507843,dev_accuracy=0.8125
+2022-04-05 23:00:52 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=0,step=800
+2022-04-05 23:00:52 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=800,loss=0.4988228380680084,train_accuracy =0.875,dev_loss=0.39848238229751587,dev_accuracy=0.8125
+2022-04-05 23:00:56 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=0,step=900
+2022-04-05 23:00:56 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=900,loss=0.42826664447784424,train_accuracy =0.890625,dev_loss=0.38686496019363403,dev_accuracy=0.8125
+2022-04-05 23:01:00 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=0,step=1000
+2022-04-05 23:01:00 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1000,loss=0.315828412771225,train_accuracy =0.8828125,dev_loss=0.39357078075408936,dev_accuracy=0.8125
+2022-04-05 23:01:04 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=0,step=1100
+2022-04-05 23:01:04 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1100,loss=0.368216335773468,train_accuracy =0.8984375,dev_loss=0.3788270056247711,dev_accuracy=0.75
+2022-04-05 23:01:08 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=0,step=1200
+2022-04-05 23:01:09 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1200,loss=0.3688681721687317,train_accuracy =0.890625,dev_loss=0.3675277531147003,dev_accuracy=0.75
+2022-04-05 23:01:12 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=0,step=1300
+2022-04-05 23:01:13 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1300,loss=0.4004226624965668,train_accuracy =0.875,dev_loss=0.36458316445350647,dev_accuracy=0.8125
+2022-04-05 23:01:17 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=0,step=1400
+2022-04-05 23:01:17 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1400,loss=0.4947485625743866,train_accuracy =0.8203125,dev_loss=0.3578980267047882,dev_accuracy=0.8125
+2022-04-05 23:01:17 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=1,step=0
+2022-04-05 23:01:18 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=0,loss=0.4909972548484802,train_accuracy =0.8359375,dev_loss=0.3607414662837982,dev_accuracy=0.8125
+2022-04-05 23:01:22 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=1,step=100
+2022-04-05 23:01:22 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=100,loss=0.2951868772506714,train_accuracy =0.890625,dev_loss=0.3648608326911926,dev_accuracy=0.8125
+2022-04-05 23:01:26 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=1,step=200
+2022-04-05 23:01:26 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=200,loss=0.4338788390159607,train_accuracy =0.890625,dev_loss=0.3541497588157654,dev_accuracy=0.8125
+2022-04-05 23:01:30 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=1,step=300
+2022-04-05 23:01:30 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=300,loss=0.2791154086589813,train_accuracy =0.9140625,dev_loss=0.3490568697452545,dev_accuracy=0.75
+2022-04-05 23:01:34 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=1,step=400
+2022-04-05 23:01:34 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=400,loss=0.5714810490608215,train_accuracy =0.828125,dev_loss=0.3575406074523926,dev_accuracy=0.8125
+2022-04-05 23:01:38 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=1,step=500
+2022-04-05 23:01:38 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=500,loss=0.24177151918411255,train_accuracy =0.9296875,dev_loss=0.34067636728286743,dev_accuracy=0.8125
+2022-04-05 23:01:42 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=1,step=600
+2022-04-05 23:01:43 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=600,loss=0.40408533811569214,train_accuracy =0.890625,dev_loss=0.33798447251319885,dev_accuracy=0.8125
+2022-04-05 23:01:46 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=1,step=700
+2022-04-05 23:01:47 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=700,loss=0.365214467048645,train_accuracy =0.8984375,dev_loss=0.33874690532684326,dev_accuracy=0.8125
+2022-04-05 23:01:51 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=1,step=800
+2022-04-05 23:01:51 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=800,loss=0.31102967262268066,train_accuracy =0.90625,dev_loss=0.3367173969745636,dev_accuracy=0.75
+2022-04-05 23:01:55 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=1,step=900
+2022-04-05 23:01:55 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=900,loss=0.33529728651046753,train_accuracy =0.9140625,dev_loss=0.3370465934276581,dev_accuracy=0.75
+2022-04-05 23:01:59 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=1,step=1000
+2022-04-05 23:01:59 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1000,loss=0.22382259368896484,train_accuracy =0.921875,dev_loss=0.3487042784690857,dev_accuracy=0.8125
+2022-04-05 23:02:03 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=1,step=1100
+2022-04-05 23:02:03 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1100,loss=0.32335415482521057,train_accuracy =0.921875,dev_loss=0.33196398615837097,dev_accuracy=0.75
+2022-04-05 23:02:07 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=1,step=1200
+2022-04-05 23:02:08 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1200,loss=0.27255555987358093,train_accuracy =0.8984375,dev_loss=0.3344091773033142,dev_accuracy=0.75
+2022-04-05 23:02:12 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=1,step=1300
+2022-04-05 23:02:12 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1300,loss=0.36120638251304626,train_accuracy =0.875,dev_loss=0.32671141624450684,dev_accuracy=0.75
+2022-04-05 23:02:16 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=1,step=1400
+2022-04-05 23:02:16 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1400,loss=0.37768372893333435,train_accuracy =0.8671875,dev_loss=0.32632115483283997,dev_accuracy=0.8125
+2022-04-05 23:02:17 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=2,step=0
+2022-04-05 23:02:17 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=0,loss=0.3776835799217224,train_accuracy =0.84375,dev_loss=0.3339802920818329,dev_accuracy=0.8125
+2022-04-05 23:02:21 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=2,step=100
+2022-04-05 23:02:21 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=100,loss=0.20130981504917145,train_accuracy =0.9296875,dev_loss=0.3315766751766205,dev_accuracy=0.8125
+2022-04-05 23:02:25 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=2,step=200
+2022-04-05 23:02:25 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=200,loss=0.3361314833164215,train_accuracy =0.9140625,dev_loss=0.32738542556762695,dev_accuracy=0.8125
+2022-04-05 23:02:29 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=2,step=300
+2022-04-05 23:02:29 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=300,loss=0.24295561015605927,train_accuracy =0.890625,dev_loss=0.32525843381881714,dev_accuracy=0.75
+2022-04-05 23:02:33 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=2,step=400
+2022-04-05 23:02:33 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=400,loss=0.5235867500305176,train_accuracy =0.84375,dev_loss=0.33660778403282166,dev_accuracy=0.8125
+2022-04-05 23:02:37 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=2,step=500
+2022-04-05 23:02:38 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=500,loss=0.17008443176746368,train_accuracy =0.9375,dev_loss=0.3261276185512543,dev_accuracy=0.75
+2022-04-05 23:02:41 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=2,step=600
+2022-04-05 23:02:42 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=600,loss=0.2761947810649872,train_accuracy =0.9140625,dev_loss=0.326683908700943,dev_accuracy=0.8125
+2022-04-05 23:02:46 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=2,step=700
+2022-04-05 23:02:46 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=700,loss=0.2429235279560089,train_accuracy =0.921875,dev_loss=0.3240087926387787,dev_accuracy=0.8125
+2022-04-05 23:02:50 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=2,step=800
+2022-04-05 23:02:50 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=800,loss=0.19242791831493378,train_accuracy =0.9375,dev_loss=0.32428818941116333,dev_accuracy=0.8125
+2022-04-05 23:02:54 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=2,step=900
+2022-04-05 23:02:54 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=900,loss=0.3059908151626587,train_accuracy =0.8984375,dev_loss=0.32419243454933167,dev_accuracy=0.75
+2022-04-05 23:02:58 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=2,step=1000
+2022-04-05 23:02:58 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1000,loss=0.2309664636850357,train_accuracy =0.9296875,dev_loss=0.33163878321647644,dev_accuracy=0.8125
+2022-04-05 23:03:02 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=2,step=1100
+2022-04-05 23:03:03 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1100,loss=0.2655390202999115,train_accuracy =0.9296875,dev_loss=0.32256603240966797,dev_accuracy=0.75
+2022-04-05 23:03:07 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=2,step=1200
+2022-04-05 23:03:07 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1200,loss=0.29921582341194153,train_accuracy =0.8984375,dev_loss=0.32452455163002014,dev_accuracy=0.75
+2022-04-05 23:03:11 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=2,step=1300
+2022-04-05 23:03:11 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1300,loss=0.2794991135597229,train_accuracy =0.9296875,dev_loss=0.31637585163116455,dev_accuracy=0.75
+2022-04-05 23:03:15 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=2,step=1400
+2022-04-05 23:03:15 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1400,loss=0.3163943290710449,train_accuracy =0.8984375,dev_loss=0.3237345814704895,dev_accuracy=0.75
+2022-04-05 23:03:16 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=3,step=0
+2022-04-05 23:03:16 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=0,loss=0.30657529830932617,train_accuracy =0.890625,dev_loss=0.3216204047203064,dev_accuracy=0.8125
+2022-04-05 23:03:20 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=3,step=100
+2022-04-05 23:03:20 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=100,loss=0.1876850724220276,train_accuracy =0.9375,dev_loss=0.3285905420780182,dev_accuracy=0.8125
+2022-04-05 23:03:24 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=3,step=200
+2022-04-05 23:03:24 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=200,loss=0.35808876156806946,train_accuracy =0.9375,dev_loss=0.3256320059299469,dev_accuracy=0.8125
+2022-04-05 23:03:28 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=3,step=300
+2022-04-05 23:03:28 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=300,loss=0.2118958979845047,train_accuracy =0.9140625,dev_loss=0.3214716613292694,dev_accuracy=0.8125
+2022-04-05 23:03:32 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=3,step=400
+2022-04-05 23:03:33 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=400,loss=0.34383484721183777,train_accuracy =0.90625,dev_loss=0.319855272769928,dev_accuracy=0.8125
+2022-04-05 23:03:36 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=3,step=500
+2022-04-05 23:03:36 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=500,loss=0.14667554199695587,train_accuracy =0.9375,dev_loss=0.3221772015094757,dev_accuracy=0.8125
+2022-04-05 23:03:40 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=3,step=600
+2022-04-05 23:03:41 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=600,loss=0.3181946277618408,train_accuracy =0.8828125,dev_loss=0.3191151022911072,dev_accuracy=0.8125
+2022-04-05 23:03:45 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=3,step=700
+2022-04-05 23:03:45 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=700,loss=0.18296189606189728,train_accuracy =0.9140625,dev_loss=0.32005590200424194,dev_accuracy=0.8125
+2022-04-05 23:03:49 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=3,step=800
+2022-04-05 23:03:49 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=800,loss=0.2230629324913025,train_accuracy =0.9296875,dev_loss=0.3253858685493469,dev_accuracy=0.8125
+2022-04-05 23:03:53 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=3,step=900
+2022-04-05 23:03:53 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=900,loss=0.2516940236091614,train_accuracy =0.9140625,dev_loss=0.32610660791397095,dev_accuracy=0.8125
+2022-04-05 23:03:57 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=3,step=1000
+2022-04-05 23:03:57 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1000,loss=0.10727859288454056,train_accuracy =0.9609375,dev_loss=0.3363102078437805,dev_accuracy=0.8125
+2022-04-05 23:04:01 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=3,step=1100
+2022-04-05 23:04:02 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1100,loss=0.25630494952201843,train_accuracy =0.9453125,dev_loss=0.324172705411911,dev_accuracy=0.75
+2022-04-05 23:04:05 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=3,step=1200
+2022-04-05 23:04:06 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1200,loss=0.18895591795444489,train_accuracy =0.9453125,dev_loss=0.3232169449329376,dev_accuracy=0.8125
+2022-04-05 23:04:10 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=3,step=1300
+2022-04-05 23:04:10 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1300,loss=0.22190973162651062,train_accuracy =0.921875,dev_loss=0.3201124370098114,dev_accuracy=0.75
+2022-04-05 23:04:14 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=3,step=1400
+2022-04-05 23:04:14 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1400,loss=0.24749229848384857,train_accuracy =0.9140625,dev_loss=0.3170791566371918,dev_accuracy=0.8125
+2022-04-05 23:04:15 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=4,step=0
+2022-04-05 23:04:15 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=0,loss=0.25977039337158203,train_accuracy =0.8984375,dev_loss=0.3205636143684387,dev_accuracy=0.8125
+2022-04-05 23:04:19 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=4,step=100
+2022-04-05 23:04:19 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=100,loss=0.12572062015533447,train_accuracy =0.9765625,dev_loss=0.32817378640174866,dev_accuracy=0.8125
+2022-04-05 23:04:23 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=4,step=200
+2022-04-05 23:04:23 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=200,loss=0.30622270703315735,train_accuracy =0.9140625,dev_loss=0.3326680362224579,dev_accuracy=0.8125
+2022-04-05 23:04:27 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=4,step=300
+2022-04-05 23:04:28 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=300,loss=0.3044891357421875,train_accuracy =0.90625,dev_loss=0.32238197326660156,dev_accuracy=0.8125
+2022-04-05 23:04:31 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=4,step=400
+2022-04-05 23:04:32 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=400,loss=0.3721867501735687,train_accuracy =0.875,dev_loss=0.3230881989002228,dev_accuracy=0.8125
+2022-04-05 23:04:36 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=4,step=500
+2022-04-05 23:04:36 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=500,loss=0.08115880191326141,train_accuracy =0.984375,dev_loss=0.3207404911518097,dev_accuracy=0.75
+2022-04-05 23:04:39 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=4,step=600
+2022-04-05 23:04:40 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=600,loss=0.20738421380519867,train_accuracy =0.9375,dev_loss=0.3212321996688843,dev_accuracy=0.8125
+2022-04-05 23:04:43 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=4,step=700
+2022-04-05 23:04:43 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=700,loss=0.12626193463802338,train_accuracy =0.9609375,dev_loss=0.3309022784233093,dev_accuracy=0.8125
+2022-04-05 23:04:47 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=4,step=800
+2022-04-05 23:04:47 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=800,loss=0.18024583160877228,train_accuracy =0.96875,dev_loss=0.3383904993534088,dev_accuracy=0.8125
+2022-04-05 23:04:51 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=4,step=900
+2022-04-05 23:04:51 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=900,loss=0.1880190372467041,train_accuracy =0.9375,dev_loss=0.33346009254455566,dev_accuracy=0.8125
+2022-04-05 23:04:55 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=4,step=1000
+2022-04-05 23:04:55 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1000,loss=0.13096292316913605,train_accuracy =0.9609375,dev_loss=0.34130722284317017,dev_accuracy=0.8125
+2022-04-05 23:04:59 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=4,step=1100
+2022-04-05 23:04:59 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1100,loss=0.21414022147655487,train_accuracy =0.9375,dev_loss=0.3362218737602234,dev_accuracy=0.75
+2022-04-05 23:05:03 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=4,step=1200
+2022-04-05 23:05:04 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1200,loss=0.17604851722717285,train_accuracy =0.9375,dev_loss=0.33646148443222046,dev_accuracy=0.8125
+2022-04-05 23:05:07 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=4,step=1300
+2022-04-05 23:05:08 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1300,loss=0.25550079345703125,train_accuracy =0.9140625,dev_loss=0.33271774649620056,dev_accuracy=0.8125
+2022-04-05 23:05:12 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=4,step=1400
+2022-04-05 23:05:12 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1400,loss=0.2014656960964203,train_accuracy =0.9140625,dev_loss=0.3306993842124939,dev_accuracy=0.8125
+2022-04-05 23:05:12 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=5,step=0
+2022-04-05 23:05:13 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=0,loss=0.28849273920059204,train_accuracy =0.8984375,dev_loss=0.3260408341884613,dev_accuracy=0.8125
+2022-04-05 23:05:17 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=5,step=100
+2022-04-05 23:05:17 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=100,loss=0.2108372300863266,train_accuracy =0.9140625,dev_loss=0.33824071288108826,dev_accuracy=0.8125
+2022-04-05 23:05:21 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=5,step=200
+2022-04-05 23:05:21 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=200,loss=0.30020397901535034,train_accuracy =0.9375,dev_loss=0.33844372630119324,dev_accuracy=0.8125
+2022-04-05 23:05:25 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=5,step=300
+2022-04-05 23:05:25 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=300,loss=0.20426566898822784,train_accuracy =0.9296875,dev_loss=0.3336196839809418,dev_accuracy=0.8125
+2022-04-05 23:05:29 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=5,step=400
+2022-04-05 23:05:29 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=400,loss=0.3616281747817993,train_accuracy =0.8671875,dev_loss=0.33303526043891907,dev_accuracy=0.8125
+2022-04-05 23:05:33 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=5,step=500
+2022-04-05 23:05:33 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=500,loss=0.09166768938302994,train_accuracy =0.9609375,dev_loss=0.3331867754459381,dev_accuracy=0.8125
+2022-04-05 23:05:37 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=5,step=600
+2022-04-05 23:05:38 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=600,loss=0.1338946670293808,train_accuracy =0.953125,dev_loss=0.3391955494880676,dev_accuracy=0.8125
+2022-04-05 23:05:41 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=5,step=700
+2022-04-05 23:05:42 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=700,loss=0.10255130380392075,train_accuracy =0.96875,dev_loss=0.34996461868286133,dev_accuracy=0.8125
+2022-04-05 23:05:45 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=5,step=800
+2022-04-05 23:05:46 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=800,loss=0.11396275460720062,train_accuracy =0.96875,dev_loss=0.34366482496261597,dev_accuracy=0.8125
+2022-04-05 23:05:50 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=5,step=900
+2022-04-05 23:05:50 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=900,loss=0.1708037555217743,train_accuracy =0.9375,dev_loss=0.3480958044528961,dev_accuracy=0.8125
+2022-04-05 23:05:54 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=5,step=1000
+2022-04-05 23:05:54 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1000,loss=0.15414462983608246,train_accuracy =0.9375,dev_loss=0.3486805856227875,dev_accuracy=0.8125
+2022-04-05 23:05:58 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=5,step=1100
+2022-04-05 23:05:58 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1100,loss=0.18712803721427917,train_accuracy =0.9609375,dev_loss=0.34468114376068115,dev_accuracy=0.8125
+2022-04-05 23:06:02 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=5,step=1200
+2022-04-05 23:06:02 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1200,loss=0.19062834978103638,train_accuracy =0.9140625,dev_loss=0.34323424100875854,dev_accuracy=0.8125
+2022-04-05 23:06:06 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=5,step=1300
+2022-04-05 23:06:07 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1300,loss=0.15568092465400696,train_accuracy =0.9375,dev_loss=0.33424508571624756,dev_accuracy=0.8125
+2022-04-05 23:06:10 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=5,step=1400
+2022-04-05 23:06:11 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1400,loss=0.24838492274284363,train_accuracy =0.9296875,dev_loss=0.33598074316978455,dev_accuracy=0.8125
+2022-04-05 23:06:11 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=6,step=0
+2022-04-05 23:06:11 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=0,loss=0.25413987040519714,train_accuracy =0.9375,dev_loss=0.34126701951026917,dev_accuracy=0.8125
+2022-04-05 23:06:15 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=6,step=100
+2022-04-05 23:06:16 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=100,loss=0.1441424936056137,train_accuracy =0.9609375,dev_loss=0.34618404507637024,dev_accuracy=0.875
+2022-04-05 23:06:20 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=6,step=200
+2022-04-05 23:06:20 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=200,loss=0.1730358600616455,train_accuracy =0.9609375,dev_loss=0.35674336552619934,dev_accuracy=0.875
+2022-04-05 23:06:24 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=6,step=300
+2022-04-05 23:06:24 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=300,loss=0.15693634748458862,train_accuracy =0.953125,dev_loss=0.34946924448013306,dev_accuracy=0.875
+2022-04-05 23:06:28 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=6,step=400
+2022-04-05 23:06:28 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=400,loss=0.28542837500572205,train_accuracy =0.890625,dev_loss=0.34343451261520386,dev_accuracy=0.8125
+2022-04-05 23:06:32 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=6,step=500
+2022-04-05 23:06:32 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=500,loss=0.11534610390663147,train_accuracy =0.9609375,dev_loss=0.3421795964241028,dev_accuracy=0.8125
+2022-04-05 23:06:36 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=6,step=600
+2022-04-05 23:06:37 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=600,loss=0.15715402364730835,train_accuracy =0.9453125,dev_loss=0.3541116416454315,dev_accuracy=0.875
+2022-04-05 23:06:41 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=6,step=700
+2022-04-05 23:06:41 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=700,loss=0.07779879868030548,train_accuracy =0.9765625,dev_loss=0.3568996489048004,dev_accuracy=0.875
+2022-04-05 23:06:45 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=6,step=800
+2022-04-05 23:06:45 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=800,loss=0.10253787785768509,train_accuracy =0.96875,dev_loss=0.3566613793373108,dev_accuracy=0.875
+2022-04-05 23:06:49 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=6,step=900
+2022-04-05 23:06:49 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=900,loss=0.17301663756370544,train_accuracy =0.9296875,dev_loss=0.35872066020965576,dev_accuracy=0.8125
+2022-04-05 23:06:53 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=6,step=1000
+2022-04-05 23:06:54 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1000,loss=0.09553470462560654,train_accuracy =0.96875,dev_loss=0.34374260902404785,dev_accuracy=0.875
+2022-04-05 23:06:57 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=6,step=1100
+2022-04-05 23:06:58 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1100,loss=0.1884295791387558,train_accuracy =0.953125,dev_loss=0.35419347882270813,dev_accuracy=0.8125
+2022-04-05 23:07:02 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=6,step=1200
+2022-04-05 23:07:02 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1200,loss=0.166927769780159,train_accuracy =0.921875,dev_loss=0.3458179235458374,dev_accuracy=0.8125
+2022-04-05 23:07:06 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=6,step=1300
+2022-04-05 23:07:06 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1300,loss=0.1348249316215515,train_accuracy =0.9453125,dev_loss=0.3438012897968292,dev_accuracy=0.8125
+2022-04-05 23:07:09 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=6,step=1400
+2022-04-05 23:07:10 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1400,loss=0.1698835790157318,train_accuracy =0.9296875,dev_loss=0.34677159786224365,dev_accuracy=0.875
+2022-04-05 23:07:10 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=7,step=0
+2022-04-05 23:07:10 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=0,loss=0.16123118996620178,train_accuracy =0.9453125,dev_loss=0.3481825292110443,dev_accuracy=0.875
+2022-04-05 23:07:14 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=7,step=100
+2022-04-05 23:07:14 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=100,loss=0.15988820791244507,train_accuracy =0.96875,dev_loss=0.35597050189971924,dev_accuracy=0.875
+2022-04-05 23:07:18 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=7,step=200
+2022-04-05 23:07:18 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=200,loss=0.09671368449926376,train_accuracy =0.984375,dev_loss=0.3580620586872101,dev_accuracy=0.8125
+2022-04-05 23:07:22 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=7,step=300
+2022-04-05 23:07:22 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=300,loss=0.12445638328790665,train_accuracy =0.96875,dev_loss=0.3562834858894348,dev_accuracy=0.8125
+2022-04-05 23:07:26 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=7,step=400
+2022-04-05 23:07:27 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=400,loss=0.2556483745574951,train_accuracy =0.90625,dev_loss=0.35655897855758667,dev_accuracy=0.8125
+2022-04-05 23:07:30 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=7,step=500
+2022-04-05 23:07:31 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=500,loss=0.12938378751277924,train_accuracy =0.9609375,dev_loss=0.36088091135025024,dev_accuracy=0.8125
+2022-04-05 23:07:35 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=7,step=600
+2022-04-05 23:07:35 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=600,loss=0.08224725723266602,train_accuracy =0.96875,dev_loss=0.3656770884990692,dev_accuracy=0.875
+2022-04-05 23:07:39 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=7,step=700
+2022-04-05 23:07:39 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=700,loss=0.14771616458892822,train_accuracy =0.953125,dev_loss=0.3690037429332733,dev_accuracy=0.8125
+2022-04-05 23:07:43 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=7,step=800
+2022-04-05 23:07:43 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=800,loss=0.07728017121553421,train_accuracy =0.9609375,dev_loss=0.3659880459308624,dev_accuracy=0.8125
+2022-04-05 23:07:47 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=7,step=900
+2022-04-05 23:07:47 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=900,loss=0.1439279466867447,train_accuracy =0.9453125,dev_loss=0.3744763433933258,dev_accuracy=0.8125
+2022-04-05 23:07:51 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=7,step=1000
+2022-04-05 23:07:51 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1000,loss=0.10202056914567947,train_accuracy =0.96875,dev_loss=0.3694503903388977,dev_accuracy=0.8125
+2022-04-05 23:07:55 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=7,step=1100
+2022-04-05 23:07:55 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1100,loss=0.1735766977071762,train_accuracy =0.9609375,dev_loss=0.37475937604904175,dev_accuracy=0.8125
+2022-04-05 23:07:59 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=7,step=1200
+2022-04-05 23:08:00 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1200,loss=0.11587753891944885,train_accuracy =0.9609375,dev_loss=0.37039199471473694,dev_accuracy=0.8125
+2022-04-05 23:08:04 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=7,step=1300
+2022-04-05 23:08:04 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1300,loss=0.17739209532737732,train_accuracy =0.9140625,dev_loss=0.3635483384132385,dev_accuracy=0.8125
+2022-04-05 23:08:08 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=7,step=1400
+2022-04-05 23:08:08 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1400,loss=0.13300850987434387,train_accuracy =0.953125,dev_loss=0.37224259972572327,dev_accuracy=0.8125
+2022-04-05 23:08:08 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=8,step=0
+2022-04-05 23:08:09 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=0,loss=0.1387813538312912,train_accuracy =0.9375,dev_loss=0.37187713384628296,dev_accuracy=0.8125
+2022-04-05 23:08:12 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=8,step=100
+2022-04-05 23:08:13 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=100,loss=0.08319573849439621,train_accuracy =0.96875,dev_loss=0.3671056032180786,dev_accuracy=0.8125
+2022-04-05 23:08:17 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=8,step=200
+2022-04-05 23:08:17 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=200,loss=0.16919204592704773,train_accuracy =0.96875,dev_loss=0.379802405834198,dev_accuracy=0.75
+2022-04-05 23:08:21 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=8,step=300
+2022-04-05 23:08:21 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=300,loss=0.16325481235980988,train_accuracy =0.953125,dev_loss=0.3915969133377075,dev_accuracy=0.75
+2022-04-05 23:08:25 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=8,step=400
+2022-04-05 23:08:25 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=400,loss=0.15736761689186096,train_accuracy =0.9609375,dev_loss=0.37428009510040283,dev_accuracy=0.875
+2022-04-05 23:08:29 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=8,step=500
+2022-04-05 23:08:29 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=500,loss=0.0503523051738739,train_accuracy =0.984375,dev_loss=0.37462756037712097,dev_accuracy=0.875
+2022-04-05 23:08:33 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=8,step=600
+2022-04-05 23:08:33 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=600,loss=0.10027172416448593,train_accuracy =0.984375,dev_loss=0.375083327293396,dev_accuracy=0.875
+2022-04-05 23:08:37 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=8,step=700
+2022-04-05 23:08:38 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=700,loss=0.10504287481307983,train_accuracy =0.9609375,dev_loss=0.3830450475215912,dev_accuracy=0.8125
+2022-04-05 23:08:42 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=8,step=800
+2022-04-05 23:08:42 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=800,loss=0.13003802299499512,train_accuracy =0.9453125,dev_loss=0.3804492950439453,dev_accuracy=0.8125
+2022-04-05 23:08:45 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=8,step=900
+2022-04-05 23:08:46 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=900,loss=0.18714913725852966,train_accuracy =0.921875,dev_loss=0.3837186098098755,dev_accuracy=0.8125
+2022-04-05 23:08:49 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=8,step=1000
+2022-04-05 23:08:50 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1000,loss=0.06609031558036804,train_accuracy =0.96875,dev_loss=0.38211655616760254,dev_accuracy=0.875
+2022-04-05 23:08:54 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=8,step=1100
+2022-04-05 23:08:54 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1100,loss=0.1577254980802536,train_accuracy =0.9375,dev_loss=0.3788853883743286,dev_accuracy=0.875
+2022-04-05 23:08:58 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=8,step=1200
+2022-04-05 23:08:58 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1200,loss=0.1130608469247818,train_accuracy =0.953125,dev_loss=0.37595388293266296,dev_accuracy=0.8125
+2022-04-05 23:09:02 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=8,step=1300
+2022-04-05 23:09:02 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1300,loss=0.10591386258602142,train_accuracy =0.9453125,dev_loss=0.38134634494781494,dev_accuracy=0.8125
+2022-04-05 23:09:06 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=8,step=1400
+2022-04-05 23:09:06 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1400,loss=0.11840875446796417,train_accuracy =0.9765625,dev_loss=0.3797801733016968,dev_accuracy=0.8125
+2022-04-05 23:09:07 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=9,step=0
+2022-04-05 23:09:07 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=0,loss=0.1065632551908493,train_accuracy =0.9609375,dev_loss=0.3880384862422943,dev_accuracy=0.8125
+2022-04-05 23:09:11 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=9,step=100
+2022-04-05 23:09:11 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=100,loss=0.09862840920686722,train_accuracy =0.9609375,dev_loss=0.381005197763443,dev_accuracy=0.875
+2022-04-05 23:09:15 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=9,step=200
+2022-04-05 23:09:15 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=200,loss=0.16866761445999146,train_accuracy =0.953125,dev_loss=0.39118990302085876,dev_accuracy=0.875
+2022-04-05 23:09:19 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=9,step=300
+2022-04-05 23:09:20 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=300,loss=0.1235538125038147,train_accuracy =0.9609375,dev_loss=0.39333781599998474,dev_accuracy=0.8125
+2022-04-05 23:09:23 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=9,step=400
+2022-04-05 23:09:24 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=400,loss=0.1986657679080963,train_accuracy =0.9296875,dev_loss=0.38165274262428284,dev_accuracy=0.9375
+2022-04-05 23:09:28 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=9,step=500
+2022-04-05 23:09:28 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=500,loss=0.054716549813747406,train_accuracy =0.9765625,dev_loss=0.38590651750564575,dev_accuracy=0.8125
+2022-04-05 23:09:32 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=9,step=600
+2022-04-05 23:09:32 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=600,loss=0.0929015502333641,train_accuracy =0.9609375,dev_loss=0.3930388391017914,dev_accuracy=0.875
+2022-04-05 23:09:36 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=9,step=700
+2022-04-05 23:09:36 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=700,loss=0.06764014065265656,train_accuracy =0.9765625,dev_loss=0.3892676532268524,dev_accuracy=0.9375
+2022-04-05 23:09:40 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=9,step=800
+2022-04-05 23:09:40 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=800,loss=0.11731620132923126,train_accuracy =0.9765625,dev_loss=0.39166775345802307,dev_accuracy=0.9375
+2022-04-05 23:09:44 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=9,step=900
+2022-04-05 23:09:45 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=900,loss=0.12408473342657089,train_accuracy =0.953125,dev_loss=0.39601007103919983,dev_accuracy=0.9375
+2022-04-05 23:09:48 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=9,step=1000
+2022-04-05 23:09:49 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1000,loss=0.06982516497373581,train_accuracy =0.96875,dev_loss=0.3941371738910675,dev_accuracy=0.9375
+2022-04-05 23:09:53 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=9,step=1100
+2022-04-05 23:09:53 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1100,loss=0.07670170068740845,train_accuracy =0.9765625,dev_loss=0.3963150084018707,dev_accuracy=0.8125
+2022-04-05 23:09:57 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=9,step=1200
+2022-04-05 23:09:57 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1200,loss=0.07312039285898209,train_accuracy =0.9765625,dev_loss=0.396190881729126,dev_accuracy=0.8125
+2022-04-05 23:10:01 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=9,step=1300
+2022-04-05 23:10:01 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1300,loss=0.10364847630262375,train_accuracy =0.9609375,dev_loss=0.39748069643974304,dev_accuracy=0.875
+2022-04-05 23:10:05 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=9,step=1400
+2022-04-05 23:10:05 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1400,loss=0.21105636656284332,train_accuracy =0.9296875,dev_loss=0.38762882351875305,dev_accuracy=0.875
+2022-04-05 23:10:06 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=10,step=0
+2022-04-05 23:10:06 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=0,loss=0.10278578102588654,train_accuracy =0.9453125,dev_loss=0.38812240958213806,dev_accuracy=0.8125
+2022-04-05 23:10:10 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=10,step=100
+2022-04-05 23:10:10 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=100,loss=0.06075282767415047,train_accuracy =0.9765625,dev_loss=0.40256136655807495,dev_accuracy=0.8125
+2022-04-05 23:10:14 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=10,step=200
+2022-04-05 23:10:15 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=200,loss=0.08178674429655075,train_accuracy =0.96875,dev_loss=0.40082675218582153,dev_accuracy=0.8125
+2022-04-05 23:10:18 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=10,step=300
+2022-04-05 23:10:19 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=300,loss=0.06667948514223099,train_accuracy =0.9609375,dev_loss=0.4149249792098999,dev_accuracy=0.875
+2022-04-05 23:10:23 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=10,step=400
+2022-04-05 23:10:23 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=400,loss=0.28693488240242004,train_accuracy =0.9375,dev_loss=0.41227811574935913,dev_accuracy=0.875
+2022-04-05 23:10:27 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=10,step=500
+2022-04-05 23:10:27 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=500,loss=0.07368223369121552,train_accuracy =0.96875,dev_loss=0.39690688252449036,dev_accuracy=0.875
+2022-04-05 23:10:31 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=10,step=600
+2022-04-05 23:10:31 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=600,loss=0.13047252595424652,train_accuracy =0.9375,dev_loss=0.40673139691352844,dev_accuracy=0.9375
+2022-04-05 23:10:35 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=10,step=700
+2022-04-05 23:10:36 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=700,loss=0.08092440664768219,train_accuracy =0.96875,dev_loss=0.4152354598045349,dev_accuracy=0.875
+2022-04-05 23:10:39 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=10,step=800
+2022-04-05 23:10:40 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=800,loss=0.07447320222854614,train_accuracy =0.96875,dev_loss=0.4051674008369446,dev_accuracy=0.875
+2022-04-05 23:10:44 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=10,step=900
+2022-04-05 23:10:44 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=900,loss=0.09402630478143692,train_accuracy =0.96875,dev_loss=0.4122234880924225,dev_accuracy=0.875
+2022-04-05 23:10:48 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=10,step=1000
+2022-04-05 23:10:48 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1000,loss=0.0847635269165039,train_accuracy =0.9765625,dev_loss=0.4178037643432617,dev_accuracy=0.875
+2022-04-05 23:10:52 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=10,step=1100
+2022-04-05 23:10:52 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1100,loss=0.09697481244802475,train_accuracy =0.96875,dev_loss=0.4082840085029602,dev_accuracy=0.875
+2022-04-05 23:10:56 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=10,step=1200
+2022-04-05 23:10:56 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1200,loss=0.11556415259838104,train_accuracy =0.9453125,dev_loss=0.4177163243293762,dev_accuracy=0.875
+2022-04-05 23:11:00 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=10,step=1300
+2022-04-05 23:11:00 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1300,loss=0.08590676635503769,train_accuracy =0.96875,dev_loss=0.40928253531455994,dev_accuracy=0.875
+2022-04-05 23:11:03 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=10,step=1400
+2022-04-05 23:11:04 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1400,loss=0.1800006628036499,train_accuracy =0.9296875,dev_loss=0.4180956184864044,dev_accuracy=0.875
+2022-04-05 23:11:04 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=11,step=0
+2022-04-05 23:11:04 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=0,loss=0.11922343820333481,train_accuracy =0.96875,dev_loss=0.4128819704055786,dev_accuracy=0.875
+2022-04-05 23:11:08 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=11,step=100
+2022-04-05 23:11:08 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=100,loss=0.07894720137119293,train_accuracy =0.9609375,dev_loss=0.41350841522216797,dev_accuracy=0.875
+2022-04-05 23:11:12 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=11,step=200
+2022-04-05 23:11:12 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=200,loss=0.06975515931844711,train_accuracy =0.9765625,dev_loss=0.4174593687057495,dev_accuracy=0.8125
+2022-04-05 23:11:16 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=11,step=300
+2022-04-05 23:11:17 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=300,loss=0.11415649950504303,train_accuracy =0.9609375,dev_loss=0.4252453148365021,dev_accuracy=0.75
+2022-04-05 23:11:20 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=11,step=400
+2022-04-05 23:11:21 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=400,loss=0.18918117880821228,train_accuracy =0.9609375,dev_loss=0.42663612961769104,dev_accuracy=0.8125
+2022-04-05 23:11:25 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=11,step=500
+2022-04-05 23:11:25 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=500,loss=0.09441481530666351,train_accuracy =0.96875,dev_loss=0.42205506563186646,dev_accuracy=0.875
+2022-04-05 23:11:29 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=11,step=600
+2022-04-05 23:11:29 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=600,loss=0.04917280375957489,train_accuracy =0.984375,dev_loss=0.42117512226104736,dev_accuracy=0.875
+2022-04-05 23:11:33 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=11,step=700
+2022-04-05 23:11:33 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=700,loss=0.03555622324347496,train_accuracy =0.9921875,dev_loss=0.41911110281944275,dev_accuracy=0.875
+2022-04-05 23:11:37 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=11,step=800
+2022-04-05 23:11:37 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=800,loss=0.034023217856884,train_accuracy =0.9921875,dev_loss=0.42420724034309387,dev_accuracy=0.8125
+2022-04-05 23:11:41 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=11,step=900
+2022-04-05 23:11:42 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=900,loss=0.07214947789907455,train_accuracy =0.984375,dev_loss=0.43493905663490295,dev_accuracy=0.875
+2022-04-05 23:11:45 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=11,step=1000
+2022-04-05 23:11:46 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1000,loss=0.09278768301010132,train_accuracy =0.96875,dev_loss=0.41678765416145325,dev_accuracy=0.8125
+2022-04-05 23:11:50 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=11,step=1100
+2022-04-05 23:11:50 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1100,loss=0.11468073725700378,train_accuracy =0.96875,dev_loss=0.42436257004737854,dev_accuracy=0.8125
+2022-04-05 23:11:54 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=11,step=1200
+2022-04-05 23:11:54 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1200,loss=0.06390650570392609,train_accuracy =0.9765625,dev_loss=0.41517171263694763,dev_accuracy=0.8125
+2022-04-05 23:11:58 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=11,step=1300
+2022-04-05 23:11:58 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1300,loss=0.11491617560386658,train_accuracy =0.9609375,dev_loss=0.42046892642974854,dev_accuracy=0.75
+2022-04-05 23:12:02 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=11,step=1400
+2022-04-05 23:12:03 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1400,loss=0.08841638267040253,train_accuracy =0.9765625,dev_loss=0.42986994981765747,dev_accuracy=0.8125
+2022-04-05 23:12:03 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=12,step=0
+2022-04-05 23:12:03 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=0,loss=0.08044599741697311,train_accuracy =0.984375,dev_loss=0.42733219265937805,dev_accuracy=0.8125
+2022-04-05 23:12:07 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=12,step=100
+2022-04-05 23:12:08 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=100,loss=0.03964642435312271,train_accuracy =0.984375,dev_loss=0.42167577147483826,dev_accuracy=0.9375
+2022-04-05 23:12:11 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=12,step=200
+2022-04-05 23:12:12 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=200,loss=0.0582159198820591,train_accuracy =0.96875,dev_loss=0.4278026521205902,dev_accuracy=0.8125
+2022-04-05 23:12:16 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=12,step=300
+2022-04-05 23:12:16 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=300,loss=0.10801824182271957,train_accuracy =0.953125,dev_loss=0.4346450865268707,dev_accuracy=0.875
+2022-04-05 23:12:20 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=12,step=400
+2022-04-05 23:12:20 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=400,loss=0.16599521040916443,train_accuracy =0.9609375,dev_loss=0.4167217016220093,dev_accuracy=0.875
+2022-04-05 23:12:24 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=12,step=500
+2022-04-05 23:12:24 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=500,loss=0.06687305867671967,train_accuracy =0.9765625,dev_loss=0.42162883281707764,dev_accuracy=0.875
+2022-04-05 23:12:28 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=12,step=600
+2022-04-05 23:12:28 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=600,loss=0.09556944668292999,train_accuracy =0.9765625,dev_loss=0.4207500219345093,dev_accuracy=0.875
+2022-04-05 23:12:32 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=12,step=700
+2022-04-05 23:12:33 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=700,loss=0.05849980562925339,train_accuracy =0.9765625,dev_loss=0.433960884809494,dev_accuracy=0.875
+2022-04-05 23:12:36 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=12,step=800
+2022-04-05 23:12:37 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=800,loss=0.06727621704339981,train_accuracy =0.96875,dev_loss=0.4323548972606659,dev_accuracy=0.875
+2022-04-05 23:12:40 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=12,step=900
+2022-04-05 23:12:41 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=900,loss=0.05569678544998169,train_accuracy =0.9765625,dev_loss=0.44593575596809387,dev_accuracy=0.875
+2022-04-05 23:12:45 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=12,step=1000
+2022-04-05 23:12:45 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1000,loss=0.03816203400492668,train_accuracy =0.9921875,dev_loss=0.4374867379665375,dev_accuracy=0.875
+2022-04-05 23:12:49 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=12,step=1100
+2022-04-05 23:12:49 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1100,loss=0.06745962053537369,train_accuracy =0.9765625,dev_loss=0.42225807905197144,dev_accuracy=0.875
+2022-04-05 23:12:53 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=12,step=1200
+2022-04-05 23:12:53 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1200,loss=0.10519541054964066,train_accuracy =0.9609375,dev_loss=0.4293629825115204,dev_accuracy=0.875
+2022-04-05 23:12:57 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=12,step=1300
+2022-04-05 23:12:57 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1300,loss=0.0719720870256424,train_accuracy =0.9765625,dev_loss=0.43195533752441406,dev_accuracy=0.875
+2022-04-05 23:13:01 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=12,step=1400
+2022-04-05 23:13:01 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1400,loss=0.08692163228988647,train_accuracy =0.96875,dev_loss=0.4333779513835907,dev_accuracy=0.875
+2022-04-05 23:13:02 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=13,step=0
+2022-04-05 23:13:02 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=0,loss=0.1474764198064804,train_accuracy =0.9453125,dev_loss=0.4353233575820923,dev_accuracy=0.875
+2022-04-05 23:13:06 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=13,step=100
+2022-04-05 23:13:06 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=100,loss=0.05887096747756004,train_accuracy =0.984375,dev_loss=0.43602338433265686,dev_accuracy=0.9375
+2022-04-05 23:13:10 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=13,step=200
+2022-04-05 23:13:10 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=200,loss=0.1191442608833313,train_accuracy =0.9609375,dev_loss=0.43532460927963257,dev_accuracy=0.9375
+2022-04-05 23:13:14 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=13,step=300
+2022-04-05 23:13:14 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=300,loss=0.1504165381193161,train_accuracy =0.9140625,dev_loss=0.43430256843566895,dev_accuracy=0.875
+2022-04-05 23:13:18 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=13,step=400
+2022-04-05 23:13:18 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=400,loss=0.14967060089111328,train_accuracy =0.9453125,dev_loss=0.446154922246933,dev_accuracy=0.875
+2022-04-05 23:13:22 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=13,step=500
+2022-04-05 23:13:22 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=500,loss=0.03238047659397125,train_accuracy =0.984375,dev_loss=0.427642822265625,dev_accuracy=0.875
+2022-04-05 23:13:26 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=13,step=600
+2022-04-05 23:13:27 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=600,loss=0.16584661602973938,train_accuracy =0.9453125,dev_loss=0.4350166320800781,dev_accuracy=0.875
+2022-04-05 23:13:30 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=13,step=700
+2022-04-05 23:13:31 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=700,loss=0.13424135744571686,train_accuracy =0.9453125,dev_loss=0.44170790910720825,dev_accuracy=0.875
+2022-04-05 23:13:34 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=13,step=800
+2022-04-05 23:13:35 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=800,loss=0.011286609806120396,train_accuracy =1.0,dev_loss=0.4441280663013458,dev_accuracy=0.875
+2022-04-05 23:13:39 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=13,step=900
+2022-04-05 23:13:39 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=900,loss=0.18129782378673553,train_accuracy =0.9296875,dev_loss=0.43993422389030457,dev_accuracy=0.8125
+2022-04-05 23:13:43 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=13,step=1000
+2022-04-05 23:13:43 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1000,loss=0.08090853691101074,train_accuracy =0.9765625,dev_loss=0.43907156586647034,dev_accuracy=0.8125
+2022-04-05 23:13:47 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=13,step=1100
+2022-04-05 23:13:47 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1100,loss=0.06515289098024368,train_accuracy =0.984375,dev_loss=0.4297966957092285,dev_accuracy=0.875
+2022-04-05 23:13:51 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=13,step=1200
+2022-04-05 23:13:51 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1200,loss=0.06126692146062851,train_accuracy =0.984375,dev_loss=0.4417288303375244,dev_accuracy=0.875
+2022-04-05 23:13:55 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=13,step=1300
+2022-04-05 23:13:55 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1300,loss=0.06347015500068665,train_accuracy =0.9765625,dev_loss=0.43076208233833313,dev_accuracy=0.875
+2022-04-05 23:13:59 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=13,step=1400
+2022-04-05 23:13:59 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1400,loss=0.1178240105509758,train_accuracy =0.953125,dev_loss=0.43610870838165283,dev_accuracy=0.875
+2022-04-05 23:14:00 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=14,step=0
+2022-04-05 23:14:00 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=0,loss=0.07438492029905319,train_accuracy =0.9609375,dev_loss=0.43073147535324097,dev_accuracy=0.875
+2022-04-05 23:14:04 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=14,step=100
+2022-04-05 23:14:04 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=100,loss=0.14546233415603638,train_accuracy =0.96875,dev_loss=0.4396384656429291,dev_accuracy=0.875
+2022-04-05 23:14:08 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=14,step=200
+2022-04-05 23:14:08 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=200,loss=0.3297320306301117,train_accuracy =0.9453125,dev_loss=0.4489145874977112,dev_accuracy=0.875
+2022-04-05 23:14:12 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=14,step=300
+2022-04-05 23:14:12 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=300,loss=0.06903732568025589,train_accuracy =0.96875,dev_loss=0.4456220269203186,dev_accuracy=0.875
+2022-04-05 23:14:16 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=14,step=400
+2022-04-05 23:14:16 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=400,loss=0.2502776086330414,train_accuracy =0.9453125,dev_loss=0.44281020760536194,dev_accuracy=0.875
+2022-04-05 23:14:20 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=14,step=500
+2022-04-05 23:14:21 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=500,loss=0.035416074097156525,train_accuracy =0.9921875,dev_loss=0.4453113079071045,dev_accuracy=0.875
+2022-04-05 23:14:24 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=14,step=600
+2022-04-05 23:14:25 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=600,loss=0.13332955539226532,train_accuracy =0.953125,dev_loss=0.44997021555900574,dev_accuracy=0.875
+2022-04-05 23:14:29 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=14,step=700
+2022-04-05 23:14:29 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=700,loss=0.07891617715358734,train_accuracy =0.9765625,dev_loss=0.44999250769615173,dev_accuracy=0.875
+2022-04-05 23:14:33 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=14,step=800
+2022-04-05 23:14:33 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=800,loss=0.061698637902736664,train_accuracy =0.9609375,dev_loss=0.46166741847991943,dev_accuracy=0.875
+2022-04-05 23:14:37 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=14,step=900
+2022-04-05 23:14:37 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=900,loss=0.06674982607364655,train_accuracy =0.9765625,dev_loss=0.47450581192970276,dev_accuracy=0.875
+2022-04-05 23:14:41 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=14,step=1000
+2022-04-05 23:14:41 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1000,loss=0.07361432909965515,train_accuracy =0.9765625,dev_loss=0.45684516429901123,dev_accuracy=0.875
+2022-04-05 23:14:45 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=14,step=1100
+2022-04-05 23:14:46 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1100,loss=0.14608506858348846,train_accuracy =0.96875,dev_loss=0.451064795255661,dev_accuracy=0.875
+2022-04-05 23:14:49 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=14,step=1200
+2022-04-05 23:14:50 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1200,loss=0.13858547806739807,train_accuracy =0.9765625,dev_loss=0.45881643891334534,dev_accuracy=0.875
+2022-04-05 23:14:54 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=14,step=1300
+2022-04-05 23:14:54 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1300,loss=0.08557602018117905,train_accuracy =0.953125,dev_loss=0.45593273639678955,dev_accuracy=0.875
+2022-04-05 23:14:58 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=14,step=1400
+2022-04-05 23:14:58 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1400,loss=0.07067178189754486,train_accuracy =0.96875,dev_loss=0.464362770318985,dev_accuracy=0.9375
+2022-04-05 23:14:58 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=15,step=0
+2022-04-05 23:14:59 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=0,loss=0.06545387953519821,train_accuracy =0.9921875,dev_loss=0.464650422334671,dev_accuracy=0.875
+2022-04-05 23:15:03 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=15,step=100
+2022-04-05 23:15:03 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=100,loss=0.027557479217648506,train_accuracy =0.9921875,dev_loss=0.459134042263031,dev_accuracy=0.875
+2022-04-05 23:15:07 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=15,step=200
+2022-04-05 23:15:07 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=200,loss=0.1933174878358841,train_accuracy =0.9453125,dev_loss=0.4631219208240509,dev_accuracy=0.875
+2022-04-05 23:15:11 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=15,step=300
+2022-04-05 23:15:11 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=300,loss=0.09770268946886063,train_accuracy =0.9609375,dev_loss=0.4664791226387024,dev_accuracy=0.875
+2022-04-05 23:15:15 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=15,step=400
+2022-04-05 23:15:15 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=400,loss=0.18295922875404358,train_accuracy =0.953125,dev_loss=0.4618889093399048,dev_accuracy=0.875
+2022-04-05 23:15:19 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=15,step=500
+2022-04-05 23:15:20 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=500,loss=0.046585846692323685,train_accuracy =0.96875,dev_loss=0.4645165801048279,dev_accuracy=0.875
+2022-04-05 23:15:24 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=15,step=600
+2022-04-05 23:15:24 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=600,loss=0.07367958128452301,train_accuracy =0.9765625,dev_loss=0.4589992165565491,dev_accuracy=0.875
+2022-04-05 23:15:28 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=15,step=700
+2022-04-05 23:15:28 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=700,loss=0.18918117880821228,train_accuracy =0.953125,dev_loss=0.465762197971344,dev_accuracy=0.875
+2022-04-05 23:15:32 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=15,step=800
+2022-04-05 23:15:32 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=800,loss=0.10214687138795853,train_accuracy =0.953125,dev_loss=0.47411268949508667,dev_accuracy=0.9375
+2022-04-05 23:15:36 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=15,step=900
+2022-04-05 23:15:36 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=900,loss=0.10250045359134674,train_accuracy =0.96875,dev_loss=0.47502413392066956,dev_accuracy=0.875
+2022-04-05 23:15:40 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=15,step=1000
+2022-04-05 23:15:41 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1000,loss=0.06916863471269608,train_accuracy =0.9765625,dev_loss=0.46323367953300476,dev_accuracy=0.875
+2022-04-05 23:15:44 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=15,step=1100
+2022-04-05 23:15:45 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1100,loss=0.11908012628555298,train_accuracy =0.953125,dev_loss=0.46297624707221985,dev_accuracy=0.9375
+2022-04-05 23:15:49 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=15,step=1200
+2022-04-05 23:15:49 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1200,loss=0.18219050765037537,train_accuracy =0.953125,dev_loss=0.4635772407054901,dev_accuracy=0.9375
+2022-04-05 23:15:53 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=15,step=1300
+2022-04-05 23:15:53 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1300,loss=0.09559740871191025,train_accuracy =0.9453125,dev_loss=0.4631248414516449,dev_accuracy=0.9375
+2022-04-05 23:15:57 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=15,step=1400
+2022-04-05 23:15:57 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1400,loss=0.11489227414131165,train_accuracy =0.9609375,dev_loss=0.4751732349395752,dev_accuracy=0.9375
+2022-04-05 23:15:58 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=16,step=0
+2022-04-05 23:15:58 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=0,loss=0.06409657746553421,train_accuracy =0.9765625,dev_loss=0.4665636122226715,dev_accuracy=0.9375
+2022-04-05 23:16:02 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=16,step=100
+2022-04-05 23:16:02 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=100,loss=0.0754094049334526,train_accuracy =0.984375,dev_loss=0.4722372591495514,dev_accuracy=0.9375
+2022-04-05 23:16:06 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=16,step=200
+2022-04-05 23:16:06 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=200,loss=0.08672349154949188,train_accuracy =0.953125,dev_loss=0.4792015552520752,dev_accuracy=0.875
+2022-04-05 23:16:10 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=16,step=300
+2022-04-05 23:16:11 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=300,loss=0.05665557086467743,train_accuracy =0.9765625,dev_loss=0.477682501077652,dev_accuracy=0.875
+2022-04-05 23:16:14 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=16,step=400
+2022-04-05 23:16:15 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=400,loss=0.10336988419294357,train_accuracy =0.9765625,dev_loss=0.490453839302063,dev_accuracy=0.9375
+2022-04-05 23:16:19 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=16,step=500
+2022-04-05 23:16:19 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=500,loss=0.06830833107233047,train_accuracy =0.96875,dev_loss=0.481005996465683,dev_accuracy=0.875
+2022-04-05 23:16:23 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=16,step=600
+2022-04-05 23:16:23 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=600,loss=0.1027635931968689,train_accuracy =0.9609375,dev_loss=0.48080262541770935,dev_accuracy=0.875
+2022-04-05 23:16:27 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=16,step=700
+2022-04-05 23:16:27 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=700,loss=0.06752699613571167,train_accuracy =0.9765625,dev_loss=0.4733005464076996,dev_accuracy=0.875
+2022-04-05 23:16:31 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=16,step=800
+2022-04-05 23:16:31 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=800,loss=0.04787764325737953,train_accuracy =0.9765625,dev_loss=0.4863463044166565,dev_accuracy=0.875
+2022-04-05 23:16:35 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=16,step=900
+2022-04-05 23:16:35 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=900,loss=0.1284651756286621,train_accuracy =0.953125,dev_loss=0.49431896209716797,dev_accuracy=0.875
+2022-04-05 23:16:39 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=16,step=1000
+2022-04-05 23:16:39 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1000,loss=0.036019325256347656,train_accuracy =0.9921875,dev_loss=0.4921250641345978,dev_accuracy=0.875
+2022-04-05 23:16:43 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=16,step=1100
+2022-04-05 23:16:44 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1100,loss=0.11532781273126602,train_accuracy =0.9609375,dev_loss=0.47720247507095337,dev_accuracy=0.875
+2022-04-05 23:16:48 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=16,step=1200
+2022-04-05 23:16:48 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1200,loss=0.0883818194270134,train_accuracy =0.96875,dev_loss=0.4780406951904297,dev_accuracy=0.875
+2022-04-05 23:16:52 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=16,step=1300
+2022-04-05 23:16:52 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1300,loss=0.10071868449449539,train_accuracy =0.953125,dev_loss=0.4766891598701477,dev_accuracy=0.875
+2022-04-05 23:16:56 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=16,step=1400
+2022-04-05 23:16:56 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1400,loss=0.06023654341697693,train_accuracy =0.984375,dev_loss=0.4851776957511902,dev_accuracy=0.875
+2022-04-05 23:16:57 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=17,step=0
+2022-04-05 23:16:57 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=0,loss=0.0331660658121109,train_accuracy =0.9921875,dev_loss=0.4843272566795349,dev_accuracy=0.875
+2022-04-05 23:17:01 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=17,step=100
+2022-04-05 23:17:01 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=100,loss=0.07387318462133408,train_accuracy =0.984375,dev_loss=0.4708864688873291,dev_accuracy=0.875
+2022-04-05 23:17:05 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=17,step=200
+2022-04-05 23:17:05 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=200,loss=0.10754504799842834,train_accuracy =0.96875,dev_loss=0.4871349334716797,dev_accuracy=0.9375
+2022-04-05 23:17:09 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=17,step=300
+2022-04-05 23:17:10 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=300,loss=0.07642807066440582,train_accuracy =0.9609375,dev_loss=0.4934740364551544,dev_accuracy=0.875
+2022-04-05 23:17:13 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=17,step=400
+2022-04-05 23:17:14 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=400,loss=0.2258588820695877,train_accuracy =0.9609375,dev_loss=0.5032157301902771,dev_accuracy=0.875
+2022-04-05 23:17:18 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=17,step=500
+2022-04-05 23:17:18 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=500,loss=0.06456337869167328,train_accuracy =0.9765625,dev_loss=0.498675674200058,dev_accuracy=0.875
+2022-04-05 23:17:22 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=17,step=600
+2022-04-05 23:17:22 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=600,loss=0.05793190747499466,train_accuracy =0.9765625,dev_loss=0.49063748121261597,dev_accuracy=0.875
+2022-04-05 23:17:26 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=17,step=700
+2022-04-05 23:17:26 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=700,loss=0.06244659423828125,train_accuracy =0.984375,dev_loss=0.4946761429309845,dev_accuracy=0.875
+2022-04-05 23:17:30 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=17,step=800
+2022-04-05 23:17:30 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=800,loss=0.06201416626572609,train_accuracy =0.9765625,dev_loss=0.50239098072052,dev_accuracy=0.875
+2022-04-05 23:17:34 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=17,step=900
+2022-04-05 23:17:34 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=900,loss=0.11663559079170227,train_accuracy =0.9609375,dev_loss=0.49925121665000916,dev_accuracy=0.875
+2022-04-05 23:17:38 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=17,step=1000
+2022-04-05 23:17:39 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1000,loss=0.06870541721582413,train_accuracy =0.9765625,dev_loss=0.505949854850769,dev_accuracy=0.875
+2022-04-05 23:17:43 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=17,step=1100
+2022-04-05 23:17:43 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1100,loss=0.025749167427420616,train_accuracy =0.9921875,dev_loss=0.5094756484031677,dev_accuracy=0.875
+2022-04-05 23:17:47 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=17,step=1200
+2022-04-05 23:17:47 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1200,loss=0.08391573280096054,train_accuracy =0.96875,dev_loss=0.5051791667938232,dev_accuracy=0.875
+2022-04-05 23:17:51 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=17,step=1300
+2022-04-05 23:17:51 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1300,loss=0.06069663539528847,train_accuracy =0.9765625,dev_loss=0.501080334186554,dev_accuracy=0.875
+2022-04-05 23:17:55 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=17,step=1400
+2022-04-05 23:17:55 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1400,loss=0.12843666970729828,train_accuracy =0.953125,dev_loss=0.515235424041748,dev_accuracy=0.875
+2022-04-05 23:17:56 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=18,step=0
+2022-04-05 23:17:56 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=0,loss=0.12024398148059845,train_accuracy =0.9765625,dev_loss=0.5127755403518677,dev_accuracy=0.875
+2022-04-05 23:18:00 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=18,step=100
+2022-04-05 23:18:00 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=100,loss=0.03736227750778198,train_accuracy =0.9921875,dev_loss=0.49635156989097595,dev_accuracy=0.875
+2022-04-05 23:18:04 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=18,step=200
+2022-04-05 23:18:04 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=200,loss=0.06952470541000366,train_accuracy =0.96875,dev_loss=0.5060770511627197,dev_accuracy=0.875
+2022-04-05 23:18:08 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=18,step=300
+2022-04-05 23:18:09 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=300,loss=0.11718966066837311,train_accuracy =0.9765625,dev_loss=0.5109065175056458,dev_accuracy=0.875
+2022-04-05 23:18:12 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=18,step=400
+2022-04-05 23:18:13 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=400,loss=0.09370866417884827,train_accuracy =0.9765625,dev_loss=0.5121676921844482,dev_accuracy=0.875
+2022-04-05 23:18:16 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=18,step=500
+2022-04-05 23:18:16 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=500,loss=0.013720709830522537,train_accuracy =1.0,dev_loss=0.5048209428787231,dev_accuracy=0.875
+2022-04-05 23:18:20 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=18,step=600
+2022-04-05 23:18:20 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=600,loss=0.056695424020290375,train_accuracy =0.96875,dev_loss=0.5056090950965881,dev_accuracy=0.875
+2022-04-05 23:18:24 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=18,step=700
+2022-04-05 23:18:24 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=700,loss=0.02122754417359829,train_accuracy =0.9921875,dev_loss=0.5031323432922363,dev_accuracy=0.875
+2022-04-05 23:18:28 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=18,step=800
+2022-04-05 23:18:28 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=800,loss=0.04592287912964821,train_accuracy =0.984375,dev_loss=0.5105656385421753,dev_accuracy=0.875
+2022-04-05 23:18:32 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=18,step=900
+2022-04-05 23:18:32 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=900,loss=0.06351547688245773,train_accuracy =0.984375,dev_loss=0.5095858573913574,dev_accuracy=0.875
+2022-04-05 23:18:36 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=18,step=1000
+2022-04-05 23:18:37 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1000,loss=0.02367170713841915,train_accuracy =1.0,dev_loss=0.5158328413963318,dev_accuracy=0.875
+2022-04-05 23:18:41 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=18,step=1100
+2022-04-05 23:18:41 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1100,loss=0.1021389365196228,train_accuracy =0.96875,dev_loss=0.5046897530555725,dev_accuracy=0.875
+2022-04-05 23:18:45 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=18,step=1200
+2022-04-05 23:18:45 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1200,loss=0.04094363749027252,train_accuracy =0.96875,dev_loss=0.519453227519989,dev_accuracy=0.875
+2022-04-05 23:18:49 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=18,step=1300
+2022-04-05 23:18:49 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1300,loss=0.06465640664100647,train_accuracy =0.96875,dev_loss=0.5151355862617493,dev_accuracy=0.875
+2022-04-05 23:18:53 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=18,step=1400
+2022-04-05 23:18:53 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1400,loss=0.1183747723698616,train_accuracy =0.96875,dev_loss=0.507236897945404,dev_accuracy=0.875
+2022-04-05 23:18:54 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=19,step=0
+2022-04-05 23:18:54 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=0,loss=0.08753518015146255,train_accuracy =0.96875,dev_loss=0.5073434710502625,dev_accuracy=0.875
+2022-04-05 23:18:58 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=19,step=100
+2022-04-05 23:18:58 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=100,loss=0.022542979568243027,train_accuracy =1.0,dev_loss=0.5162777900695801,dev_accuracy=0.875
+2022-04-05 23:19:02 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=19,step=200
+2022-04-05 23:19:02 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=200,loss=0.13711439073085785,train_accuracy =0.9609375,dev_loss=0.5331227779388428,dev_accuracy=0.875
+2022-04-05 23:19:06 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=19,step=300
+2022-04-05 23:19:06 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=300,loss=0.033633358776569366,train_accuracy =0.9921875,dev_loss=0.5297998785972595,dev_accuracy=0.875
+2022-04-05 23:19:10 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=19,step=400
+2022-04-05 23:19:10 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=400,loss=0.15416084229946136,train_accuracy =0.953125,dev_loss=0.5321786999702454,dev_accuracy=0.875
+2022-04-05 23:19:14 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=19,step=500
+2022-04-05 23:19:14 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=500,loss=0.02529221959412098,train_accuracy =0.9921875,dev_loss=0.5139128565788269,dev_accuracy=0.875
+2022-04-05 23:19:18 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=19,step=600
+2022-04-05 23:19:19 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=600,loss=0.13357225060462952,train_accuracy =0.96875,dev_loss=0.5131418704986572,dev_accuracy=0.875
+2022-04-05 23:19:22 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=19,step=700
+2022-04-05 23:19:23 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=700,loss=0.04900060594081879,train_accuracy =0.9921875,dev_loss=0.5160099267959595,dev_accuracy=0.8125
+2022-04-05 23:19:27 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=19,step=800
+2022-04-05 23:19:27 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=800,loss=0.1486009806394577,train_accuracy =0.9765625,dev_loss=0.5252524614334106,dev_accuracy=0.875
+2022-04-05 23:19:31 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=19,step=900
+2022-04-05 23:19:31 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=900,loss=0.05770782008767128,train_accuracy =0.984375,dev_loss=0.5238138437271118,dev_accuracy=0.875
+2022-04-05 23:19:35 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=19,step=1000
+2022-04-05 23:19:35 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1000,loss=0.06706177443265915,train_accuracy =0.9921875,dev_loss=0.5058979988098145,dev_accuracy=0.875
+2022-04-05 23:19:39 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=19,step=1100
+2022-04-05 23:19:39 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1100,loss=0.03828659653663635,train_accuracy =0.984375,dev_loss=0.5190325379371643,dev_accuracy=0.875
+2022-04-05 23:19:43 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=19,step=1200
+2022-04-05 23:19:44 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1200,loss=0.04181830212473869,train_accuracy =0.9765625,dev_loss=0.5079174637794495,dev_accuracy=0.875
+2022-04-05 23:19:48 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=19,step=1300
+2022-04-05 23:19:48 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1300,loss=0.06172884628176689,train_accuracy =0.984375,dev_loss=0.5103722810745239,dev_accuracy=0.875
+2022-04-05 23:19:52 torch_task.py torch_task _train_on_epoch [line:214] [INFO] 开始训练epoch=19,step=1400
+2022-04-05 23:19:52 torch_task.py torch_task _train_on_epoch [line:247] [INFO] step=1400,loss=0.09010641276836395,train_accuracy =0.953125,dev_loss=0.5148993134498596,dev_accuracy=0.875
+2022-04-05 23:19:53 torch_task.py torch_task _prepare_data_loader [line:379] [INFO] 生成 test dataloader
