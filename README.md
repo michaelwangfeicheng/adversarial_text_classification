@@ -1,2 +1,2 @@
 # adversarial_text_classification
-adversarial_text_classification
+adversarial_text_classification 文本分类的对抗训练算法
